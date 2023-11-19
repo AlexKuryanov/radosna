@@ -21,6 +21,10 @@
   overflow: hidden;
 }
 
+.page {
+  scroll-behavior: smooth;
+}
+
 .page__body {
   max-width: 1440px;
   margin: 0 auto;
