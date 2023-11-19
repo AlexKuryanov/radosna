@@ -1,0 +1,135 @@
+/* Variables */
+:root {
+  --main-text-color: #0029ff;
+  --yellow: #ffd000;
+}
+
+/* General styles */
+/**
+* Hide blocks visually 
+*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+* {
+  outline: 1px solid red;
+}
+
+.page__body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* Header */
+.page__header {
+  width: 200px;
+  position: fixed;
+  height: 100vh;
+}
+
+.page__navigation {
+  padding: 1rem;
+}
+
+.page__logo-link {
+  display: block;
+}
+
+.list__link {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* Page Content */
+.page__content {
+  margin-left: 232px;
+  padding: 1rem;
+}
+
+.project {
+  border-bottom: 2px solid var(--main-text-color);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.project__intro {
+  display: flex;
+  align-items: center;
+}
+
+.project__logo {
+  min-width: 100px;
+  min-height: 100px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.project__intro-text {
+  padding-left: 20px;
+}
+
+.project__desc {
+  padding-left: 120px;
+}
+
+/* Page footer */
+.page__footer {
+  width: 200px;
+  height: max-content;
+  position: fixed;
+  bottom: 0;
+}
+
+.socials__item {
+  padding: 0.5rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 700px) {
+  .page__header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page__navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page__content {
+    margin-left: 0;
+  }
+}
