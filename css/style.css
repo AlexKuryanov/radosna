@@ -101,6 +101,10 @@ img {
   bottom: 0;
 }
 
+.socials {
+  padding: 0.5rem;
+}
+
 .socials__item {
   padding: 0.5rem;
 }
@@ -131,5 +135,17 @@ img {
 
   .page__content {
     margin-left: 0;
+  }
+
+  .page__footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
   }
 }
