@@ -163,6 +163,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
 
   .page__navigation {
