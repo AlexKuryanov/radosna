@@ -100,7 +100,8 @@ img {
 .page__footer {
   width: 200px;
   height: max-content;
-  position: fixed;
+  position: sticky;
+  top: 385px;
   bottom: 0;
 }
 
@@ -113,13 +114,15 @@ img {
 }
 
 /* Media queries */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 699px) {
   .page__header {
     width: 100%;
     height: auto;
-    position: relative;
+    position: fixed;
+    top: 0;
     display: flex;
     flex-wrap: wrap;
+    backdrop-filter: blur(8px);
   }
 
   .page__navigation {
@@ -142,6 +145,7 @@ img {
 
   .page__footer {
     position: relative;
+    top: 0;
     width: 100%;
     height: auto;
     display: flex;
