@@ -23,6 +23,7 @@
 
 .page {
   scroll-behavior: smooth;
+  scroll-padding: 150px;
 }
 
 .page__body {
@@ -149,6 +150,11 @@ img {
 }
 
 @media screen and (max-width: 699px) {
+  .page {
+    scroll-behavior: smooth;
+    scroll-padding: 300px;
+  }
+
   .page__header {
     width: 100%;
     height: auto;
