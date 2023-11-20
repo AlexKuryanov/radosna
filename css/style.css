@@ -151,8 +151,7 @@ img {
 
 @media screen and (max-width: 699px) {
   .page {
-    scroll-behavior: smooth;
-    scroll-padding: 300px;
+    scroll-padding: 260px;
   }
 
   .page__header {
@@ -204,5 +203,17 @@ img {
   .socials {
     display: flex;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .page {
+    scroll-padding: 287px;
+  }
+}
+
+@media screen and (max-width: 339px) {
+  .page {
+    scroll-padding: 314px;
   }
 }
