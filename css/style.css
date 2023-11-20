@@ -83,6 +83,13 @@ img {
   cursor: pointer;
 }
 
+.project__intro::before {
+  content: " ►";
+}
+.project[open] .project__intro::before {
+  content: " ▼";
+}
+
 .project__logo {
   min-width: 100px;
   min-height: 100px;
