@@ -191,6 +191,10 @@ img {
     margin-left: 0;
   }
 
+  .about {
+    padding-top: 250px;
+  }
+
   .reviews__container {
     grid-template-columns: 1fr;
   }
