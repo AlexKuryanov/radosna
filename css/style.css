@@ -162,7 +162,8 @@ img {
   .page__navigation {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .navigation__list {
