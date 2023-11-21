@@ -82,9 +82,14 @@ img {
   cursor: pointer;
 }
 
+.project__intro-text {
+  align-self: flex-end;
+}
+
 .project__intro::before {
   content: " ►";
 }
+
 .project[open] .project__intro::before {
   content: " ▼";
 }
@@ -100,7 +105,8 @@ img {
 }
 
 .project__desc {
-  padding-left: 120px;
+  margin-top: 0;
+  padding-left: 136px;
 }
 
 .reviews__container {
