@@ -70,6 +70,14 @@ img {
   padding: 1rem;
 }
 
+.mission__title {
+  margin-bottom: 5px;
+}
+
+.mission__paragraph {
+  margin-top: 0;
+}
+
 .project {
   border-bottom: 2px solid var(--main-text-color);
   margin-bottom: 20px;
