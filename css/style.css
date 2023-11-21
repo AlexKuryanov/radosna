@@ -102,6 +102,13 @@ img {
   content: " ▼";
 }
 
+.project__intro-text::after {
+  content: "...";
+}
+.project[open] .project__intro-text::after {
+  content: "";
+}
+
 .project__logo {
   min-width: 100px;
   min-height: 100px;
