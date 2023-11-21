@@ -23,7 +23,6 @@
 
 .page {
   scroll-behavior: smooth;
-  scroll-padding: 150px;
 }
 
 .page__body {
@@ -219,13 +218,13 @@ img {
 
 @media screen and (max-width: 500px) {
   .page {
-    scroll-padding: 287px;
+    scroll-padding: 265px;
   }
 }
 
 @media screen and (max-width: 339px) {
   .page {
-    scroll-padding: 314px;
+    scroll-padding: 300px;
   }
 
   .about {
