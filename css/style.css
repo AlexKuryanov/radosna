@@ -90,9 +90,9 @@ img {
   cursor: pointer;
 }
 
-.project__intro-text {
+/* .project__intro-text {
   align-self: flex-end;
-}
+} */
 
 .project__intro::before {
   content: " ►";
@@ -119,9 +119,21 @@ img {
   padding-left: 20px;
 }
 
+.project__desc-wrap {
+  display: flex;
+  flex-direction: column;
+  padding-left: 136px;
+}
+
 .project__desc {
   margin-top: 0;
-  padding-left: 136px;
+  /* padding-left: 136px; */
+}
+
+.project__desc-image {
+  align-self: center;
+  width: 30%;
+  height: auto;
 }
 
 .reviews__container {
