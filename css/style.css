@@ -96,9 +96,9 @@ img {
   cursor: pointer;
 }
 
-/* .project__intro-text {
-  align-self: flex-end;
-} */
+.project__intro::marker {
+  display: none;
+}
 
 .project__intro::before {
   content: " ►";
