@@ -308,6 +308,7 @@ img {
 
   .project__desc-image {
     width: 100%;
+    height: auto;
   }
 
   .project__desc-image:hover {
