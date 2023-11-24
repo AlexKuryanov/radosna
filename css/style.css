@@ -44,6 +44,10 @@ img {
   vertical-align: bottom;
 }
 
+.mb-80 {
+  margin-bottom: 80px;
+}
+
 /* Header */
 .page__header {
   width: 200px;
