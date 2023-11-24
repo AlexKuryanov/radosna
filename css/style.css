@@ -237,6 +237,7 @@ img {
     flex-wrap: wrap;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    z-index: 10;
   }
 
   .page__navigation {
@@ -287,6 +288,11 @@ img {
 @media screen and (max-width: 500px) {
   .page {
     scroll-padding: 265px;
+  }
+
+  .page__navigation {
+    padding: 0;
+    padding-top: 1rem;
   }
 
   .project__desc-wrap {
