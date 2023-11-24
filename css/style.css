@@ -150,9 +150,9 @@ img {
 .project__desc-image {
   /* align-self: center; */
   /* display: inline-block; */
-  width: 30%;
-  height: auto;
-  height: 100%;
+  /* width: 30%; */
+  height: 250px;
+  /* height: 100%; */
   vertical-align: top;
   object-fit: contain;
   transition: all 0.3s linear;
@@ -163,6 +163,8 @@ img {
 }
 
 .project__desc-video {
+  /* width: 30%; */
+  height: 250px;
 }
 
 .reviews__container {
