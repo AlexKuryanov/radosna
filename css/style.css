@@ -87,6 +87,8 @@ img {
 .project__intro {
   display: flex;
   align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
@@ -102,12 +104,12 @@ img {
   content: " ▼";
 }
 
-.project__intro-text::after {
+/* .project__intro-text::after {
   content: "...";
 }
 .project[open] .project__intro-text::after {
   content: "";
-}
+} */
 
 .project__logo {
   min-width: 100px;
@@ -117,12 +119,14 @@ img {
 
 .project__intro-text {
   padding-left: 20px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .project__desc-wrap {
   display: flex;
   flex-direction: column;
-  padding-left: 136px;
+  /* padding-left: 136px; */
 }
 
 .project__desc {
@@ -130,10 +134,31 @@ img {
   /* padding-left: 136px; */
 }
 
+.project__images-wrap {
+  height: min-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .project__desc-image {
-  align-self: center;
+  /* align-self: center; */
+  /* display: inline-block; */
   width: 30%;
   height: auto;
+  height: 100%;
+  vertical-align: top;
+  object-fit: contain;
+  transition: all 0.3s linear;
+}
+
+.project__desc-image:hover {
+  transform: scale(1.2);
+}
+
+.project__desc-video {
 }
 
 .reviews__container {
@@ -185,6 +210,12 @@ img {
 
   .review:hover {
     transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .project__desc-image {
+    width: 50%;
   }
 }
 
@@ -253,6 +284,22 @@ img {
   .page {
     scroll-padding: 265px;
   }
+
+  .project__desc-wrap {
+    padding-left: 0px;
+  }
+
+  .project__intro {
+    margin-bottom: 20px;
+  }
+
+  .project__desc-image {
+    width: 100%;
+  }
+
+  .project__desc-image:hover {
+    transform: unset;
+  }
 }
 
 @media screen and (max-width: 339px) {
@@ -262,5 +309,25 @@ img {
 
   .about {
     padding-top: 270px;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project__intro {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    row-gap: 20px;
+  }
+
+  .project__intro::before {
+    flex-basis: 50%;
+  }
+
+  .project__intro-text {
+    padding-left: 0;
   }
 }
