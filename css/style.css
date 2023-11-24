@@ -165,6 +165,7 @@ img {
 .project__desc-video {
   /* width: 30%; */
   height: 250px;
+  aspect-ratio: 300 / 250;
 }
 
 .reviews__container {
