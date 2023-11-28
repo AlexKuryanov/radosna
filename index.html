@@ -667,6 +667,34 @@
             </p>
           </div>
         </details>
+        <form class="qa__ask-form" id="qa-form">
+          <label for="name">Ваше ім'я:</label>
+          <input
+            class="qa__ask-input required"
+            type="text"
+            name="name"
+            id="name"
+          />
+          <label for="email">Ваш email:</label>
+          <input
+            class="qa__ask-input email required"
+            type="email"
+            name="email"
+            id="email"
+          />
+          <label for="message">Ваше питання:</label>
+          <textarea
+            class="qa__ask-input qa__ask-message required"
+            name="message"
+            id="message"
+          ></textarea>
+          <input
+            class="qa__ask-submit"
+            type="submit"
+            value="Відправити"
+            id="submit"
+          />
+        </form>
       </section>
     </main>
     <footer class="page__footer" id="contacts">
@@ -717,5 +745,6 @@
         </li>
       </ul>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
