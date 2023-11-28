@@ -48,6 +48,10 @@ img {
   margin-bottom: 80px;
 }
 
+.section:last-child {
+  margin-bottom: -245px;
+}
+
 /* Header */
 .page__header {
   width: 200px;
