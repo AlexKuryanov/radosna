@@ -185,6 +185,52 @@ img {
   border-radius: 20px;
 }
 
+/** Q&A section */
+.qa__block {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 20px 40px;
+  border: 3px solid var(--main-text-color);
+  cursor: pointer;
+}
+
+.question {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.question::marker {
+  display: none;
+}
+
+.question::after {
+  content: "+";
+  position: absolute;
+  right: 40px;
+}
+
+.qa__block[open] .question::after {
+  content: "-";
+}
+
+.answer {
+  margin-top: 15px;
+  color: black;
+}
+
+.answrer__link {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--main-text-color);
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+.answrer__link:hover {
+  color: var(--yellow);
+}
+
 /* Page footer */
 .page__footer {
   width: 200px;
