@@ -78,6 +78,7 @@ img {
   padding: 1rem;
 }
 
+/** About section */
 .mission__title {
   margin-bottom: 5px;
 }
@@ -86,6 +87,7 @@ img {
   margin-top: 0;
 }
 
+/** Project section */
 .project {
   border-bottom: 2px solid var(--main-text-color);
   margin-bottom: 20px;
@@ -112,13 +114,6 @@ img {
   content: " ▼";
 }
 
-/* .project__intro-text::after {
-  content: "...";
-}
-.project[open] .project__intro-text::after {
-  content: "";
-} */
-
 .project__logo {
   min-width: 100px;
   min-height: 100px;
@@ -134,12 +129,10 @@ img {
 .project__desc-wrap {
   display: flex;
   flex-direction: column;
-  /* padding-left: 136px; */
 }
 
 .project__desc {
   margin-top: 0;
-  /* padding-left: 136px; */
 }
 
 .project__images-wrap {
@@ -152,11 +145,7 @@ img {
 }
 
 .project__desc-image {
-  /* align-self: center; */
-  /* display: inline-block; */
-  /* width: 30%; */
   height: 250px;
-  /* height: 100%; */
   vertical-align: top;
   object-fit: contain;
   transition: all 0.3s linear;
@@ -167,11 +156,11 @@ img {
 }
 
 .project__desc-video {
-  /* width: 30%; */
   height: 250px;
   aspect-ratio: 300 / 250;
 }
 
+/** Reviews section */
 .reviews__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -214,6 +203,7 @@ img {
 }
 
 /* Media queries */
+/** 1024-1440 */
 @media screen and (max-width: 1440px) {
   .reviews__container {
     grid-template-columns: repeat(2, 1fr);
@@ -224,12 +214,14 @@ img {
   }
 }
 
+/** 700-1023 */
 @media screen and (max-width: 1023px) {
   .project__desc-image {
     width: 50%;
   }
 }
 
+/** 501-699 */
 @media screen and (max-width: 699px) {
   .page {
     scroll-padding: 260px;
@@ -292,6 +284,7 @@ img {
   }
 }
 
+/** 340-500 */
 @media screen and (max-width: 500px) {
   .page {
     scroll-padding: 265px;
@@ -320,6 +313,7 @@ img {
   }
 }
 
+/** <339 */
 @media screen and (max-width: 339px) {
   .page {
     scroll-padding: 300px;
